@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <!-- Top menu item -->
+        <menuitem name="Blog" id="ecom_blog.menu_root"/>
+
+        <!-- menu categories -->
+        <menuitem name="Blog Menu" id="ecom_blog.menu_1" parent="ecom_blog.menu_root"/>
+
+        <!-- actions -->
+        <menuitem name="List" id="ecom_blog.menu_1_list" parent="ecom_blog.menu_1"
+                  action="ecom_blog.action_window"/>
+    </data>
+</odoo>

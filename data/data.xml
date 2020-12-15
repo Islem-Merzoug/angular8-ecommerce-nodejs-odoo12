@@ -1,0 +1,37 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="blog1" model="ecom_blog.ecom_blog">
+            <field name="name">E-commerce</field>
+            <field name="image" type="base64" file="ecom_blog/static/img/coffee-purchase-experience-3-sketch-file-a7.jpg"/>
+            <field name="content">La landing page, aussi appelée page d’atterrissage ou page de destination, est un
+                outil indispensable pour mener à bien des campagnes de publicité en ligne, tester des offres, ou
+                recueillir les adresses e-mail et coordonnées des prospects. La landing page est une page optimisée en
+                matière de contenu et de conception, vers laquelle du trafic est redirigé dans le but de générer des
+                conversions qui sont définies par l’annonceur ou l’e-commerçant. La landing page se positionne ainsi
+                comme le nerf de la guerre en matière de conversion e-commerce. Qu’elle soit créée pour générer des
+                ventes directes, des téléchargements, des demandes de devis, des prises de contact, des créations de
+                comptes utilisateur, ou des appels téléphoniques, la landing page sert à inciter les visiteurs à
+                réaliser une action qui impacte positivement les indicateurs de performance de l’activité
+                professionnelle. La page de destination est par conséquent généralement suivie par un outil analytique
+                permettant d’évaluer sa performance par rapport à l’objectif visé. Nous vous expliquons à continuation
+                tout ce qu’il y a à savoir sur le thème des landing pages, en vous présentant 6 exemples différents
+                desquels vous inspirer.
+            </field>
+            <field name="description">Landing Page : Comment créer une page réussie (Définition et 6 exemples)</field>
+        </record>
+
+        <record id="blog2" model="ecom_blog.ecom_blog">
+            <field name="name">Inspiration E-commerce</field>
+            <field name="image" type="base64" file="ecom_blog/static/img/inspiration_e-commerce.jpeg"/>
+
+            <field name="content">Le développement d’un nouveau produit est le processus qui consiste à donner vie à une
+                idée de produit innovante pour commercialiser le produit fini sur le marché. Bien que ce processus
+                diffère d’un domaine à l’autre, il peut être divisé en cinq étapes : idéation, recherche, planification,
+                prototypage, recherche de fournisseurs et estimation des couts.
+            </field>
+            <field name="description">Comment développer un produit : du concept à la commercialisation.</field>
+        </record>
+
+    </data>
+</odoo>
