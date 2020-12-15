@@ -1,0 +1,96 @@
+<!-- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active">
+        <a routerLink="books">Produits</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li routerLinkActive="active" *ngIf="!isAuth">
+        <a routerLink="auth/signup">Créer un compte</a>
+      </li>
+      <li routerLinkActive="active" *ngIf="!isAuth">
+        <a routerLink="auth/signin">Connexion</a>
+      </li>
+      <li>
+        <a style="cursor:pointer"
+           *ngIf="isAuth">Déconnexion</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+
+
+
+<nav class="navbar navbar-inverse navbar-expand-xl navbar-dark">
+	<!-- logo -->
+	<div class="navbar-header d-flex col">
+		<a class="navbar-brand logo" routerLink="/products"><i class="fa fa-user-o"></i>PRESIDENT<b>ecom</b></a>
+	</div>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		
+		<!-- search field -->
+		<form class="navbar-form form-inline">
+			<div class="input-group search-box">
+				<input type="text" id="search" class="form-control" placeholder="Search here...">
+				<span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+			</div>
+		</form>
+		
+		<!-- Help button -->
+		<button type="button" class="btn btn-outline-light">Help</button>
+
+
+		<!-- login button -->
+		<!-- <div>
+			<a routerLink="/#" class="login button fancy-button">
+				login
+			</a>
+		</div> -->
+		
+
+		<!-- cart button -->
+		<div><a routerLink="/cart" class=" cart_list button fancy-button">
+				<i class="material-icons">shopping_cart</i>Cart list
+			</a>
+		</div>
+
+		<!-- poducts dropdown -->
+		<!-- <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+			<button class="button fancy-button"  ngbDropdownAnchor (focus)="myDrop.open()">Products</button>
+			
+			<div ngbDropdownMenu aria-labelledby="dropdownManual">
+
+			  <a class="dropdown-item" ngbDropdownItem href="#">Electronics</a>
+			  <a class="dropdown-item" ngbDropdownItem href="#">Women's Fashion</a>
+			  <a class="dropdown-item" ngbDropdownItem href="#">Men's Fashion</a>
+			  <a class="dropdown-item" ngbDropdownItem href="#">Home | Leving</a>
+			  <a class="dropdown-item" ngbDropdownItem href="#">Health | Bueauty</a>
+			  <a class="dropdown-item" ngbDropdownItem href="#">Baby | Toys</a>
+			  <a class="dropdown-item" ngbDropdownItem href="#">Sport | Travel</a>
+			  
+			</div>
+		</div> -->
+
+
+		<!-- <div class="btn-group" mdbDropdown>
+			<button mdbDropdownToggle type="button" mdbBtn color="primary" class="dropdown-toggle waves-light"
+			  mdbWavesEffect>
+			  Basic dropdown
+			</button>
+		  
+			<div class="dropdown-menu dropdown-primary">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			  <div class="divider dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Separated link</a>
+			</div>
+		</div> -->
+
+	</div>	                  
+
+</nav>
+

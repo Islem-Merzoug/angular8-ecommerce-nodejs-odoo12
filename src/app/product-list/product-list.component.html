@@ -1,0 +1,58 @@
+<app-feature-slider></app-feature-slider>
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Product Rows</h2>
+    <div class="list-group">
+      <button class="list-group-item"
+              *ngFor="let product of lstProducts; let productId = index"
+              (click)="onViewProduct(productId)">
+
+          <!-- <img [src]="getImg(productId)"/> -->
+          <!-- <img *ngIf="product" [src]="product.getImg(productId)"/> -->
+          <img *ngIf="product" [src]="getImg(productId)"/>
+
+          <th> produit: {{ product.name }}</th>
+          <br>
+          <th> prix: {{ product.list_price }} $</th>
+          <!-- <th> prix: {{ product.image_medium }} </th> -->
+
+
+      </button>
+
+      <!-- <button type="button" class="checkout button fancy-button"  *ngFor="let product of lstProducts; let productId = index" (click)="getImg(productId)">getImg</button> -->
+
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container" >
+  <h2>Product Rows</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Prix</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of lstProducts">
+
+      <th>{{ product.extId }}</th>
+      <th>{{ product.name }}</th>
+      <th>{{ product.list_price }}</th>
+      <th>{{ product.description }}</th>
+
+    </tr>
+    </tbody>
+  </table>
+</div> -->
+
+
+
+
+<!-- ----------------------------------------------------------------------------------- -->
+
+ 

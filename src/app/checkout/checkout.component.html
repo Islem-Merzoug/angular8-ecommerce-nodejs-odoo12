@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <h2>Check Out</h2>
+        <form [formGroup]="checkoutForm" (ngSubmit)="onSaveCheckoutForm()">
+            
+            <div class="form-group">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name"
+                        class="form-control" formControlName="full_name">
+            </div>
+
+            <div class="form-group">
+                <label for="address_line_1">Address line 1:</label>
+                <input type="texte" id="address_line_1"
+                        class="form-control" formControlName="address_line_1">
+            </div>
+
+            <div class="form-group">
+                <label for="address_line_2">Address line 2:</label>
+                <input type="texte" id="address_line_2"
+                        class="form-control" formControlName="address_line_2">
+            </div>
+
+
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="texte" id="city"
+                        class="form-control" formControlName="city">
+            </div>
+
+            <div class="form-group">
+                <label for="region">State/Province/Region:</label>
+                <input type="texte" id="region"
+                        class="form-control" formControlName="region">
+            </div>
+
+            <div class="form-group">
+                <label for="zip">ZIP:</label>
+                <input type="texte" id="zip"
+                        class="form-control" formControlName="zip">
+            </div>
+
+            <div class="form-group">
+                <label for="phone_number">Phone number:</label>
+                <input type="texte" id="phone_number"
+                        class="form-control" formControlName="phone_number">
+            </div>
+
+            <button class="btn btn-success" [disabled]="checkoutForm.invalid" type="submit">
+                Enregistrer
+            </button>
+
+            <h3>Shipping Prices</h3>
+
+            <button class="shipping-item" *ngFor="let total of totalPrice | async">
+                <span>{{ total.name }}</span>
+                <span>{{ total.list_price | currency }}</span>
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<h3>Shopping Cart</h3>
+<br><hr>
+
+<div class="cart-item" *ngFor="let item of items; let itemId = index">
+
+  <span>{{ item.name }}</span>
+  <span>{{ item.list_price | currency }}</span>
+  <span>{{ item.quantity }} items</span>
+
+  <button class="btn btn-link pull-right" >
+    <span class="glyphicon glyphicon-minus" (click)="onDeleteItem(itemId)"></span>
+  </button>
+
+</div>
+
+
+<div>
+  <button routerLink="/checkout" type="button" class="btn btn-warning chechout">Proceed to chechout</button>
+  <!-- <button routerLink="/checkout" type="button" class="chechout">Proceed to chechout</button> -->
+
+</div>
